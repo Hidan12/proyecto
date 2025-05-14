@@ -1,0 +1,245 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.watchword p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+
+.hero {
+    background-color: #007AFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+.img-banner{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-hero{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.sub-title{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight:bold;
+}
+
+.text-hero {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.bold-text{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.highlight {
+  color: black;
+  font-weight: bold;
+}
+
+.conteiner-presentation {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #F5F5DC;
+    color: black;
+}
+
+.text-presentation p {
+  margin-bottom: 1rem;
+}
+
+.services {
+    color: black;
+    background-color: #87CEEB;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card-services {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-card {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.title-card {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-detail {
+  font-size: 0.875rem;
+}
+
+.testimony {
+    background-color: #FFE4C4;
+    color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.testimony-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-card img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.testimony-detail {
+  flex-grow: 1;
+}
+
+.testimony-name {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.age, .testimony-city, .testimony-text {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.btn-contact {
+  position: fixed;
+  bottom: 1px;
+  left: 5vw;
+  width: 90%;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color:  #FF0000;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contact:hover {
+  background-color: #e20303;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 3rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-banner{
+    height: 30vh
+  }
+  .conteiner-presentation{
+    padding: 3rem;
+  }
+  .conteiner-services{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: auto;
+  }
+  .conteiner-testimony{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: auto;
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 4rem;
+  }
+  .img-banner{
+    height: 35vh
+  }
+  .conteiner-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    grid-auto-flow: column;
+    overflow-x: auto;
+  }
+  .btn-contact{
+    width: 35vw;
+    left: 60vw;
+  }
+
+}
+
